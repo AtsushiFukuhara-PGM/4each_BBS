@@ -1,0 +1,194 @@
+/* CSSの記述 */
+
+body{
+    margin: 0;
+    font-family: "Zen Maru Gothic","メイリオ",Meiryo,sans-serif;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: left;
+}
+header img{
+    max-width:200px;
+    height: auto;
+    text-align: start;
+}
+
+nav{
+    background-color: #000000;
+    padding: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav li{
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #a0a0a0;
+}
+
+main{
+    display: flex;
+    padding: 0.5rem 1rem;
+}
+
+.board{
+    flex:3;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-right: 1rem
+}
+
+.sidebar{
+    flex: 1;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.sidebar li{
+    margin-bottom: 0.1rem;
+}
+
+.sidebar>ul>li{
+    font-weight: bold;
+    margin-top: 0.5em;
+    padding-bottom: 0.5rem;
+}
+
+.sidebar ul ul{
+    margin-left: 1rem;
+    font-weight: normal;
+}
+/* サイドバーの各タイトル */
+.parent-title{
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px dotted gray;
+    padding-bottom: 0.1rem;
+    margin-bottom: 1rem;
+}
+/* 掲示板領域のタイトル */
+.board-title{
+    font-size: 30px;
+    border-bottom: 2px solid gray;
+    border-left: 6px solid #333;
+    padding-left: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.post-form{
+    background-color: #e9e9e9;
+    border: 1px solid #505050;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.form-head{
+    border-bottom: 2px solid gray;
+    border-left: 6px solid #333;
+    padding-left: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/* 投稿一覧 */
+.form-title{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgb(255, 204, 204);
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.form-group{
+    margin-bottom:1rem;
+}
+/* ハンドルネーム、タイトル入力エリア */
+.form-input{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-family: "メイリオ",Meiryo,sans-serif;
+    box-sizing: border-box;
+}
+/* コメント入力エリア */
+.form-textarea{
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-family: "メイリオ",Meiryo,sans-serif;
+    box-sizing: border-box;
+}
+/* 送信ボタン */
+.form-button{
+    background-color: #5b66ff;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-button:hover{
+    background-color: #1f2eff;
+}
+/* 投稿全体の枠 */
+.post-box{
+    border:1px solid #ccc;
+    padding:1rem;
+    margin-bottom:1rem;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+/* 投稿タイトル */
+.post-box h4{
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3rem;
+}
+/* コメント部分 */
+.post-box p{
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+/* 投稿者表示 */
+.post-meta{
+    font-size: 0.85rem;
+    color:#888888;
+    text-align: left;
+    margin-top:0.5rem;
+}
